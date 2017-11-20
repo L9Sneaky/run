@@ -4,7 +4,7 @@ package run;
 public class run {
 
 	
-	private int a ,  b , c;
+	private int a = 0,b = 0,c = 0;
 	private double r1, r2, d;
 
 	public void setNum(int a1 , int b1 , int c1) {
@@ -28,5 +28,6 @@ public class run {
 			System.out.println("The equation has one root " + r1);
 		}
 	}
+	
 
 }

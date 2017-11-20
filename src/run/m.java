@@ -7,30 +7,30 @@ public class m {
 		run p = new run();
 		v n = new v();
 		Scanner i = new Scanner(System.in);
-		
 		System.out.print("Enter Command	");
-		
+
 		String x = i.next();
 		do {
-			switch(x){
+			int a = 0 , b = 0 , c = 0 ; 
+			switch (x) {
 			case "setNum":
 				System.out.print("set a1 , b1 , c1 ");
-				int a = i.nextInt();
-				int b = i.nextInt();
-				int c = i.nextInt();
-			p.setNum(a, b, c);
-			break;
+				a = i.nextInt();
+				b = i.nextInt();
+				c = i.nextInt();
+				p.setNum(a, b, c);
+				break;
 			case "getNum":
 				p.getNum();
 				break;
-			
-			
+		
+
 			}
 			System.out.print("Enter Command	");
 			x = i.next();
-		}while(!x.equalsIgnoreCase("exit"));
-			System.out.println("cya");
-		
+		} while (!x.equalsIgnoreCase("exit"));
+		System.out.println("cya");
+
 	}
 
 }
